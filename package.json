@@ -3,15 +3,20 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "start:dev": "nx serve api",
     "start": "nx serve",
     "build": "nx build",
     "test": "nx test"
   },
   "private": true,
+  "prisma": {
+    "schema": "libs/api/data-access-db/src/lib/schema.prisma"
+  },
   "dependencies": {
     "@nestjs/common": "^9.0.0",
     "@nestjs/core": "^9.0.0",
     "@nestjs/platform-express": "^9.0.0",
+    "@nestjs/platform-fastify": "^9.2.1",
     "@nrwl/next": "15.4.2",
     "core-js": "^3.6.5",
     "next": "13.0.0",
@@ -23,6 +28,8 @@
     "tslib": "^2.3.0"
   },
   "devDependencies": {
+    "@nestjs/graphql": "^10.1.7",
+    "@nestjs/mercurius": "^10.1.7",
     "@nestjs/schematics": "^9.0.0",
     "@nestjs/testing": "^9.0.0",
     "@nrwl/cli": "15.4.2",
@@ -53,8 +60,10 @@
     "eslint-plugin-jsx-a11y": "6.6.1",
     "eslint-plugin-react": "7.31.11",
     "eslint-plugin-react-hooks": "4.6.0",
+    "graphql": "^16.6.0",
     "jest": "28.1.1",
     "jest-environment-jsdom": "28.1.1",
+    "mercurius": "^11.4.0",
     "nx": "15.4.2",
     "prettier": "^2.6.2",
     "react-test-renderer": "18.2.0",
