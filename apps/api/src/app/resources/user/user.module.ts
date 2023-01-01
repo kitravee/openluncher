@@ -1,8 +1,9 @@
 import { Module } from '@nestjs/common';
 import { UserService } from './user.service';
 import { UserResolver } from './user.resolver';
+import { DbService } from '@openluncher/api/data-access-db';
 
 @Module({
-  providers: [UserResolver, UserService],
+  providers: [UserResolver, UserService, DbService],
 })
 export class UserModule {}

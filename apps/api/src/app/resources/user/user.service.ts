@@ -1,26 +1,32 @@
 import { Injectable } from '@nestjs/common';
-import { CreateUserInput } from './dto/create-user.input';
-import { UpdateUserInput } from './dto/update-user.input';
+import { DbService } from '@openluncher/api/data-access-db';
+import {
+  CreateOneUserArgs,
+  FindUniqueUserArgs,
+  UpdateOneUserArgs,
+} from '@openluncher/api/generated/db-types';
 
 @Injectable()
 export class UserService {
-  create(createUserInput: CreateUserInput) {
-    return 'This action adds a new user';
+  constructor(private db: DbService) {}
+
+  findOne(findUserArgs: FindUniqueUserArgs) {
+    return this.db.user.findUnique(findUserArgs);
   }
 
   findAll() {
-    return `This action returns all user`;
+    return this.db.user.findMany();
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} user`;
+  create(userCreateArgs: CreateOneUserArgs) {
+    return this.db.user.create(userCreateArgs);
   }
 
-  update(id: number, updateUserInput: UpdateUserInput) {
-    return `This action updates a #${id} user`;
+  update(userUpdateInput: UpdateOneUserArgs) {
+    return this.db.user.update(userUpdateInput);
   }
 
-  remove(id: number) {
-    return `This action removes a #${id} user`;
+  remove(removeUserArgs: FindUniqueUserArgs) {
+    return this.db.user.delete(removeUserArgs);
   }
 }
