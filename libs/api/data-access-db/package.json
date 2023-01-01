@@ -1,8 +1,5 @@
 {
   "name": "@openluncher/api/generated/data-access-db",
   "version": "0.0.1",
-  "type": "commonjs",
-  "dependencies": {
-    "@prisma/client": "^4.8.0"
-  }
+  "type": "commonjs"
 }
