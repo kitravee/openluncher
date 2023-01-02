@@ -20,6 +20,9 @@
       ],
       "@openluncher/api/generated/db-types": [
         "libs/api/generated/db-types/src/index.ts"
+      ],
+      "@openluncher/client/generated/graphql-types": [
+        "libs/client/generated/graphql-types/src/index.ts"
       ]
     }
   },
