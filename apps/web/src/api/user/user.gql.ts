@@ -1,6 +1,6 @@
 import { gql } from 'graphql-request';
 
-const GET_USER = gql`
+export const GET_USER = gql`
   query GetUser($args: UserWhereUniqueInput!) {
     user(where: $args) {
       name
@@ -9,7 +9,7 @@ const GET_USER = gql`
   }
 `;
 
-const GET_USERS = gql`
+export const GET_USERS = gql`
   query GetUsers {
     users {
       id
