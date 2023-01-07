@@ -13,9 +13,9 @@ const config: CodegenConfig = {
         extension: '.gen.ts',
         baseTypesPath: '~@openluncher/client/generated/graphql-types',
       },
-      plugins: ['typescript-operations', 'typescript-react-query'],
+      plugins: ['typescript-operations', 'typescript-urql'],
       config: {
-        withHooks: true,
+        webhook: true,
       },
     },
   },

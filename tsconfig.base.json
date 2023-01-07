@@ -15,12 +15,14 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@web/*": ["apps/web/*"],
       "@openluncher/api/data-access-db": [
         "libs/api/data-access-db/src/index.ts"
       ],
       "@openluncher/api/generated/db-types": [
         "libs/api/generated/db-types/src/index.ts"
       ],
+      "@openluncher/client/core": ["libs/client/core/src/index.ts"],
       "@openluncher/client/generated/graphql-types": [
         "libs/client/generated/graphql-types/src/index.ts"
       ]

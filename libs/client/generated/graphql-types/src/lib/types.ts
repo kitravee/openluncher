@@ -35,25 +35,6 @@ export type MutationUpdateUserArgs = {
   where: UserWhereUniqueInput;
 };
 
-export type ProductCountAggregate = {
-  __typename?: 'ProductCountAggregate';
-  _all: Scalars['Int'];
-  id: Scalars['Int'];
-  name: Scalars['Int'];
-};
-
-export type ProductMaxAggregate = {
-  __typename?: 'ProductMaxAggregate';
-  id?: Maybe<Scalars['String']>;
-  name?: Maybe<Scalars['String']>;
-};
-
-export type ProductMinAggregate = {
-  __typename?: 'ProductMinAggregate';
-  id?: Maybe<Scalars['String']>;
-  name?: Maybe<Scalars['String']>;
-};
-
 export type Query = {
   __typename?: 'Query';
   user: User;
