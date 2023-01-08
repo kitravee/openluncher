@@ -1,23 +1,32 @@
 ##  Commit Convention
 #### the commit conventions
-- `feat` stands for `feature,` and refers to a new feature that is being added to the application.
 
-- `fix` refers to a bug fix, which is a change that is made to the code in order to fix a bug or issue that was causing problems in the application.
+Real world examples can look like this:
 
-- `style` refers to changes that are being made to the styling of the application, such as updates to the user interface or changes to the way that the application looks.
+```
+chore: run tests on travis ci
+```
 
-- `refactor` refers to changes that are being made to the codebase in order to improve its structure or organization, without necessarily adding new features or fixing bugs.
+```
+fix(server): send cors headers
+```
 
-- `test` refers to changes that are being made to the testing infrastructure or test suite of the application, and
+```
+feat(blog): add comment section
+```
 
-- `docs` refers to changes that are being made to the documentation for the application. 
+Common types according to [commitlint-config-conventional (based on the Angular convention)](https://github.com/conventional-changelog/commitlint/tree/master/@commitlint/config-conventional#type-enum) can be:
 
-- `chore` is a catch-all term that can be used to describe any miscellaneous code changes that are being made as part of regular code maintenance.
+- `build`
+- `chore`
+- `ci`
+- `docs`
+- `feat`
+- `fix`
+- `perf`
+- `refactor`
+- `revert`
+- `style`
+- `test`
 
-- `hotfix`: This prefix is used to indicate that the commit is a hotfix, which is a change that is made to the code in order to fix a critical bug or issue that needs to be addressed as soon as possible.
-
-- `perf`: This prefix is short for `performance,` and is used to indicate that the commit is making improvements to the performance of the application.
-
-- `security`: This prefix is used to indicate that the commit is addressing a security issue or vulnerability in the application.
-
-- `wip`: This prefix stands for `work in progress,` and is used to indicate that the commit is not yet complete and should not be considered ready for production.
+These can be modified by [your own configuration](#config).
