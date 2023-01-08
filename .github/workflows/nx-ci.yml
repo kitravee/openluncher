@@ -1,13 +1,13 @@
 name: nx-ci
 
 on:
-  push:
-    branches:
-      - main
-      - releases/**
   pull_request:
     types:
       - ready_for_review
+      - review_requested
+    branches:
+      - main
+      - releases/**
 
 jobs:
   main:
