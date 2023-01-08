@@ -1,7 +1,23 @@
 <p align="center">
  <img width="460" src="https://user-images.githubusercontent.com/50334192/211209400-a3c92bea-fc5c-4796-b5c0-3590280ca6b5.svg">
 </p>
-
+</p>
+  <p align="center">
+    <a href="https://github.com/kitravee/openluncher/actions">
+      <img alt="Tests Passing" src="https://github.com/kitravee/openluncher/workflows/nx-ci/badge.svg" />
+    </a>
+    <a href="https://github.com/kitravee/openluncher/graphs/contributors">
+      <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/kitravee/openluncher" />
+    </a>
+    <a href="https://github.com/kitravee/openluncher/issues">
+      <img alt="Issues" src="https://img.shields.io/github/issues/kitravee/openluncher?color=0088ff" />
+    </a>
+    <a href="https://github.com/kitravee/openluncher/pulls">
+      <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/kitravee/openluncher?color=0088ff" />
+    </a>
+    <br />
+    <br />
+  </p>
 
 ##  Commit Convention
 #### the commit conventions
