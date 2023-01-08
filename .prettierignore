@@ -2,3 +2,10 @@
 
 /dist
 /coverage
+
+# code gen
+README.md
+apps/web/src/api/user/user.gql.gen.ts
+libs/api/generated/db-types/src/index.ts
+libs/client/core/tsconfig.lib.json
+libs/client/generated/graphql-types/src/lib/types.ts

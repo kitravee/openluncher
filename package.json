@@ -46,6 +46,8 @@
   },
   "devDependencies": {
     "@babel/preset-react": "^7.14.5",
+    "@commitlint/cli": "^17.4.0",
+    "@commitlint/config-conventional": "^17.4.0",
     "@graphql-codegen/cli": "^2.16.2",
     "@graphql-codegen/near-operation-file-preset": "^2.4.4",
     "@graphql-codegen/typed-document-node": "^2.3.11",
@@ -90,6 +92,7 @@
     "eslint-plugin-jsx-a11y": "6.6.1",
     "eslint-plugin-react": "7.31.11",
     "eslint-plugin-react-hooks": "4.6.0",
+    "husky": "^8.0.3",
     "jest": "28.1.1",
     "jest-environment-jsdom": "28.1.1",
     "mercurius": "^11.4.0",

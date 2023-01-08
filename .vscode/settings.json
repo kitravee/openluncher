@@ -1,0 +1,7 @@
+{
+  "cSpell.words": ["openluncher", "Urql"],
+  "files.eol": "\n",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}
