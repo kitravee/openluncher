@@ -1,3 +1,7 @@
 {
-  "cSpell.words": ["Urql"]
+  "cSpell.words": ["Urql"],
+  "files.eol": "\n",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }
