@@ -15,10 +15,8 @@ export function Index() {
       <div className="wrapper">
         <div className="container">
           <div id="welcome">
-            <h1>
-              <span> Hello there, </span>
-              Welcome web 👋
-            </h1>
+            <span> Hello there, </span>
+            <h1 className="text-3xl font-bold underline">Hello world!</h1>
           </div>
 
           <div id="hero" className="rounded">
