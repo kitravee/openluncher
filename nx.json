@@ -3,6 +3,14 @@
   "npmScope": "openluncher",
   "tasksRunnerOptions": {
     "default": {
+      "runner": "nx/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"],
+        "cacheDirectory": "/tmp/nx-cache",
+        "accessToken": "M2YxNWM0NzgtMzlhMS00ZTkyLTk0MzYtYjVkOGYwMzE0MDY1fHJlYWQtd3JpdGU="
+      }
+    },
+    "cloud": {
       "runner": "@nrwl/nx-cloud",
       "options": {
         "cacheableOperations": ["build", "lint", "test", "e2e"],
