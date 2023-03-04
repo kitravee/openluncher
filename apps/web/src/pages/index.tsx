@@ -1,10 +1,7 @@
 import { withUrqlApi } from '@openluncher/client/core';
-import { useGetUsersQuery } from '@web/src/api/user/user.gql.gen';
 import styles from './index.module.css';
 
 export function Index() {
-  const [{ data, fetching }] = useGetUsersQuery();
-  console.log(data);
   /*
    * Replace the elements below with your own.
    *
