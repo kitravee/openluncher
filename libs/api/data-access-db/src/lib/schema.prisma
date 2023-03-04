@@ -1,5 +1,6 @@
 // This is your Prisma schema file,
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
+// npx prisma db push
 
 generator client {
   provider = "prisma-client-js"
@@ -47,3 +48,25 @@ model User {
   /// @HideField()
   password String
 }
+
+model Supporter {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+
+  /// @Validator.IsInt()
+  /// @Validator.Min(0)
+  /// @Validator.Max(5)
+  rate Float
+
+  createdAt DateTime @default(now())
+
+  displayName String
+
+  /// @Validator.IsEmail()
+  email String @unique
+
+  mobile String?
+
+  message String?
+}
+
+
