@@ -21,7 +21,7 @@ async function bootstrap() {
     {}
   );
   // const globalPrefix = 'api';
-  const port = process.env.PORT || 3333;
+  const port = process.env.PORT || 8080;
   const isProduction = process.env.NODE_ENV === 'production';
   app.register(fastifyMultipart);
   app.useGlobalPipes(
