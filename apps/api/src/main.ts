@@ -20,8 +20,8 @@ async function bootstrap() {
     new FastifyAdapter(),
     {}
   );
-  const globalPrefix = 'api';
-  const port = process.env.PORT || 3333;
+  // const globalPrefix = 'api';
+  const port = process.env.PORT || 8080;
   const isProduction = process.env.NODE_ENV === 'production';
   app.register(fastifyMultipart);
   app.useGlobalPipes(
@@ -54,12 +54,10 @@ async function bootstrap() {
 
   app.enableCors({ origin: true });
 
-  app.setGlobalPrefix(globalPrefix);
+  // app.setGlobalPrefix(globalPrefix);
 
   await app.listen(port);
-  Logger.log(
-    `🚀 Application is running on: http://localhost:${port}/${globalPrefix}`
-  );
+  Logger.log(`🚀 Application is running on: http://localhost:${port}`);
 }
 
 bootstrap();
